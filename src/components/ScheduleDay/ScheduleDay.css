@@ -1,0 +1,34 @@
+.day-schedule {
+    width: 100%;
+  }
+  
+  .day-schedule h2 {
+    background-color: #13447E;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: left;
+  }
+  
+  .schedule-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #13447E;
+    align-items: center; /* This will align items vertically centered */
+  }
+  
+  .room-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .room-icon {
+    color: #13447E;
+    margin-right: 5px; /* Adjust the spacing between the icon and the text if necessary */
+  }
+  
+  .bold-text {
+    font-weight: bold;
+  }
+  

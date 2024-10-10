@@ -1,0 +1,26 @@
+.week-schedule {
+    width: 100%;
+  }
+  
+  .week-schedule table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .week-schedule th,
+  .week-schedule td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    border-radius: 4px;
+  }
+  
+  .week-schedule th {
+    background-color: #13447E;
+    color: #fff;
+  }
+  
+  .week-schedule tbody td {
+    background-color: #fff;
+  }
+  

@@ -1,0 +1,64 @@
+.notification-container {
+  position: relative;
+  z-index: 1000; /* Убедитесь, что это значение больше, чем у расписания */
+}
+
+.notifications-icon {
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.notification-menu {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  width: 450px; /* Устанавливаем ширину окна уведомлений */
+  height: 291px; /* Устанавливаем высоту окна уведомлений */
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 1000; /* Убедитесь, что это значение больше, чем у расписания */
+}
+
+.notification-tabs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.notification-tab {
+  flex: 1;
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+  background-color: #D9D9D9;
+  color: #000; /* Цвет текста в неактивном состоянии */
+  display: flex; /* Добавлено для выравнивания иконок и текста */
+  align-items: center; /* Выравнивание по вертикали */
+  justify-content: center; /* Выравнивание по горизонтали */
+}
+
+.notification-tab.active {
+  background-color: #55AF5E;
+  color: #fff; /* Цвет текста в активном состоянии */
+}
+
+.notification-divider {
+  margin: 0;
+  border: 0;
+  border-top: 1px solid #ddd; /* Разделительная линия */
+}
+
+.notification-content {
+  padding: 20px;
+}
+
+.notification-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.notification-empty {
+  text-align: center;
+  color: #A9A9A9; /* Серый цвет текста для пустого состояния */
+}

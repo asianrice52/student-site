@@ -1,0 +1,183 @@
+/* src/components/Home.css */
+
+.home-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F5F5F5;
+  overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
+}
+
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.menu-icon {
+  font-size: 32px !important;
+  cursor: pointer;
+  margin-left: 20px;
+  color: #13447E;
+}
+
+.notifications-icon {
+  font-size: 32px !important;
+  cursor: pointer;
+  margin-right: 20px;
+  color: #13447E;
+}
+
+.university-logo {
+  max-height: 50px;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.side-menu.open {
+  transform: translateX(0);
+}
+
+.close-icon {
+  font-size: 32px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.side-menu-logo {
+  max-height: 50px;
+  margin-bottom: 20px;
+}
+
+.side-menu-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.side-menu-nav a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  padding: 10px 0;
+  font-size: 18px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.side-menu-nav a:hover, .side-menu-nav a.active {
+  background-color: #f0f0f0;
+}
+
+.side-menu-nav .menu-icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #13447E;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 15;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.home-main {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  position: relative;
+  width: 896px;
+  height: 376px;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+}
+
+.slider-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.slider-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+}
+
+.news-section, .announcements-section {
+  margin-bottom: 40px;
+  font-family: montserrat;
+}
+
+.news-grid, .announcements-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.news-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.announcements-grid {
+  grid-template-columns: 1fr;
+}
+
+.news-item, .announcement-item {
+  height: 150px;
+  border-radius: 8px;
+}
+
+.news-item.red, .announcement-item.red {
+  background-color: #ff3333;
+}
+
+.news-item.blue, .announcement-item.blue {
+  background-color: #0056b3;
+}
